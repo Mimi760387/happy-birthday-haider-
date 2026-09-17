@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Haider ❤️</title>
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;600&display=swap');
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#000;font-family:'Poppins',sans-serif;overflow-x:hidden}
+.hero{min-height:100vh;background:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.85)),url('https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?auto=format&fit=crop&w=1000&q=80') center/cover;display:flex;align-items:center;justify-content:center;padding:20px}
+.card{background:rgba(0,0,0,0.55);backdrop-filter:blur(12px);border:2px solid #ff8fab;padding:35px 25px;border-radius:30px;max-width:380px;text-align:center;box-shadow:0 0 40px #ff4d6d55}
+h1{font-family:'Great Vibes',cursive;font-size:58px;color:#ff8fab}
+h2{font-size:28px;color:#fff;margin-bottom:15px}
+p{font-size:15.5px;line-height:1.7;color:#ffd6e0}
+.btn{margin-top:25px;background:linear-gradient(45deg,#ff4d6d,#ff8fab);border:none;color:#fff;padding:14px 35px;border-radius:50px;font-size:18px;font-weight:600;cursor:pointer;box-shadow:0 5px 20px #ff4d6d88}
+</style>
+</head>
+<body>
+<div class="hero">
+  <div class="card">
+    <h1>Happy Birthday</h1>
+    <h2>My Love Haider ❤️</h2>
+    <p>
+      Meri zindagi ke sab se khoobsurat insan ko<br>
+      Salgirah bohat Mubarak ho 🎂✨<br><br>
+      Tum meri dua ho, meri khushi ho.<br>
+      Allah tumhe hamesha khush rakhe aur lambi zindagi de. Tum hamesha mere hi rehna!
+    </p>
+    <button class="btn" onclick="celebrate()">🎁 Click Karo Jaan 🎁</button>
+  </div>
+</div>
+<script>
+function celebrate(){
+  confetti({particleCount:250,spread:120,origin:{y:0.6}});
+  setTimeout(()=>confetti({particleCount:150,angle:60,spread:80,origin:{x:0}}),300);
+  setTimeout(()=>confetti({particleCount:150,angle:120,spread:80,origin:{x:1}}),600);
+}
+setTimeout(celebrate,1200);
+</script>
+</body>
+  </html>
